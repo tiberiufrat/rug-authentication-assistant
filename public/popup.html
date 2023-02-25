@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title data-locale="app_title">RUG Authentication Assistant</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+  <div class="app">
+    <div class="header">
+      <img src="assets/logo.png" alt="Logo Extension" height="90" class="logo">
+      <p class="title" data-locale="app_title">RUG Authentication Assistant</p>
+      <p class="subtitle" data-locale="app_subtitle">Generate 2FA authentication codes and automatically insert 2FA
+        code on Brightspace (RUG)</p>
+    </div>
+
+
+    <hr class="divider" />
+
+    <!-- No key -->
+    <div id="no-key" class="alert">
+      <p data-locale="no_key_text"></p>
+    </div>
+
+
+
+    <!-- Secret key -->
+    <label for="mfa-secret" class="form" data-locale="mfa_secret_label">Secret key</label>
+    <div class="full-width">
+      <input type="password" id="mfa-secret" class="input input-code">
+      <button id="mfa-hide" class="button button-small" title="Make secret key visible">👁️‍🗨️</button>
+      <button id="mfa-save" class="button button-main" data-locale="mfa_save">Save</button>
+    </div>
+
+    <!-- Token output -->
+    <div id="token-output" style="width: 100%; text-align: left;">
+      <label for="mfa-code-output" class="form" data-locale="mfa_output_label">Generate a 2FA code</label>
+      <div class="full-width">
+        <input type="text" id="mfa-code-output" disabled class="input input-code" placeholder="Please wait…">
+        <!-- <button id="mfa-time" class="button button-small" title="Seconds until token reset">🕒</button> -->
+        <button id="mfa-copy" class="button button-small" title="Copy to clipboard">📋</button>
+        <button id="mfa-generate" class="button button-main" title="Seconds until token reset"
+          data-locale="clock_loading">🕒 Loading…</button>
+      </div>
+    </div>
+
+    <!-- Autocompletion toggle on/off -->
+    <div id="autocomplete-toggle" style="width: 100%; text-align: left;">
+      <label for="mfa-autocomplete" class="form" data-locale="mfa_autocomplete_label">Autocomplete 2FA code</label>
+      <div class="full-width">
+        <input type="text" id="mfa-autocomplete" class="input input-code" disabled>
+        <button id="mfa-autocomplete-toggle" class="button button-main" data-locale="clock_loading">🕒 Loading…</button>
+      </div>
+    </div>
+
+    <!-- File selector -->
+    <label for="file-selector" class="form" data-locale="file_selector_label">Upload a QR code (PNG only)</label>
+    <label for="file-selector" id="upload-label" class="button button-main" data-locale="file_selector_button">Upload QR
+      code</label>
+    <input type="file" id="file-selector" accept=".png">
+
+  </div>
+
+  <script src="popup.js"></script>
+
+  <!--
+      This HTML file opens when you click on icon from the toolbar.
+
+      To begin the development, run `npm run watch`.
+      To create a production bundle, use `npm run build`.
+    -->
+</body>
+
+</html>

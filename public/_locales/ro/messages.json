@@ -1,0 +1,65 @@
+{
+    "extension_name": {
+        "message": "Asistent pentru autentificare RUG"
+    },
+    "extension_description": {
+        "message": "Evită autentificarea cu 2 factori pe portalul Brightspace (RUG)"
+    },
+    "popup_title": {
+        "message": "Asistent MFA RUG"
+    },
+    "hide_secret_key": {
+        "message": "Ascunde cheia secretă"
+    },
+    "make_secret_key_visible": {
+        "message": "Afișează cheia secretă"
+    },
+    "copied_success": {
+        "message": "Copiat!"
+    },
+    "copied_error": {
+        "message": "A apărut o eroare!"
+    },
+    "app_title": {
+        "message": "Asistent pentru autentificare RUG"
+    },
+    "app_subtitle": {
+        "message": "Generează coduri de autentificare cu 2 factori și autentifică-te automat pe Brightspace (RUG)"
+    },
+    "mfa_secret_label": {
+        "message": "Cheie secretă"
+    },
+    "mfa_save": {
+        "message": "Salvează"
+    },
+    "mfa_output_label": {
+        "message": "Generează un cod 2FA"
+    },
+    "clock_loading": {
+        "message": "🕒 Așteaptă…"
+    },
+    "file_selector_label": {
+        "message": "Încarcă cheia secretă dintr-un cod QR (doar fișiere PNG)"
+    },
+    "file_selector_button": {
+        "message": "Încarcă codul QR"
+    },
+    "mfa_autocomplete_label": {
+        "message": "Completează automat codul 2FA"
+    },
+    "enabled": {
+        "message": "Pornit"
+    },
+    "disabled": {
+        "message": "Oprit"
+    },
+    "activate": {
+        "message": "Activează"
+    },
+    "deactivate": {
+        "message": "Dezactivează"
+    },
+    "no_key_text": {
+        "message": "Nu ai încărcat încă nicio cheie! Extensia nu va funcționa până când nu introduci o cheie (fie prin intermediul câmpului de mai jos, fie prin încărcarea unui cod QR)"
+    }
+}

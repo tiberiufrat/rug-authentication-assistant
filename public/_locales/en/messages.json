@@ -1,0 +1,65 @@
+{
+    "extension_name": {
+        "message": "RUG Authentication Assistant"
+    },
+    "extension_description": {
+        "message": "Generate 2FA authentication codes and automatically insert 2FA code on Brightspace (RUG)"
+    },
+    "popup_title": {
+        "message": "RUG MFA Assistant"
+    },
+    "hide_secret_key": {
+        "message": "Hide the secret key"
+    },
+    "make_secret_key_visible": {
+        "message": "Make secret key visible"
+    },
+    "copied_success": {
+        "message": "Copied!"
+    },
+    "copied_error": {
+        "message": "An error has occured!"
+    },
+    "app_title": {
+        "message": "RUG Authentication Assistant"
+    },
+    "app_subtitle": {
+        "message": "Generate 2FA authentication codes and automatically insert 2FA code on Brightspace (RUG)"
+    },
+    "mfa_secret_label": {
+        "message": "Secret key"
+    },
+    "mfa_save": {
+        "message": "Save"
+    },
+    "mfa_output_label": {
+        "message": "Generate a 2FA code"
+    },
+    "clock_loading": {
+        "message": "🕒 Loading…"
+    },
+    "file_selector_label": {
+        "message": "Upload the secret key from a QR code (PNG only)"
+    },
+    "file_selector_button": {
+        "message": "Upload QR code"
+    },
+    "mfa_autocomplete_label": {
+        "message": "Autocomplete 2FA code"
+    },
+    "enabled": {
+        "message": "Enabled"
+    },
+    "disabled": {
+        "message": "Disabled"
+    },
+    "activate": {
+        "message": "Activate"
+    },
+    "deactivate": {
+        "message": "Deactivate"
+    },
+    "no_key_text": {
+        "message": "You haven't uploaded any keys yet! The extension will not function until you enter a key (either via the input field below or by uploading a QR code)"
+    }
+}

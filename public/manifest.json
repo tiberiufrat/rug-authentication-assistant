@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "__MSG_app_title__",
+  "version": "0.1.0",
+  "description": "__MSG_extension_description__",
+  "default_locale": "en",
+  "icons": {
+    "32": "icons/rug-32.png",
+    "48": "icons/rug-48.png",
+    "96": "icons/rug-96.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "__MSG_popup_title__",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.rug.nl/*"
+      ],
+      "run_at": "document_idle",
+      "js": [
+        "contentScript.js"
+      ]
+    }
+  ]
+}
