@@ -8,7 +8,7 @@ import * as OTPAuth from "otpauth";
  * 2. No error in page (leads to endless loop)
  */
 
-let queryInputField = 'input[type="text"][name="nffc"]#nffc'
+let queryInputField = 'input[name="nffc"]#nffc'
 let queryNextButton = 'button[type="button"][name="loginButton2"]#loginButton2'
 
 // Check if there is an authentication error
